@@ -71,7 +71,7 @@ if __name__ == "__main__":
         if user_input.lower() in ("quit", "exit", "q"):
             break
 
-        print("\n TravelBuddy đang suy nghĩ...")
+        print("\n--< TravelBuddy đang suy nghĩ... >--")
         result = graph.invoke({"messages": [("human", user_input)]})
         final = result["messages"][-1]
         print(f"\nTravelBuddy: {final.content}")
